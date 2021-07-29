@@ -6,7 +6,7 @@
 | 1 |[Reverse an array](challenge/array-reverse/README.md) |
 | 2 |[array-insert-shift](challenge/array-insert-shift/readme.md) |
 | 3 |[array-binary-search](challenge/array-binary-search/README.md)|
-| 4 |   |
+| 5 |[linked-list](challenge/linked-list/README.md)  |
 | 5 |  |
 | 6 |   |
 | 7 |  |

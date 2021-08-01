@@ -26,7 +26,7 @@ class AppTest {
         ls.insert(1);
         ls.insert(2);
         ls.insert(3);
-        assertEquals(1,ls.head.value,"the head sould be node 1");
+        assertEquals(3,ls.head.value,"the head sould be node 3");
 
     }
     @Test void insertMultiple(){

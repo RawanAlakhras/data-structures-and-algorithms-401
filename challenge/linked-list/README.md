@@ -9,15 +9,29 @@
 ## Challenge
 
 create linked list with ability to:
+
 * insert in it .
 * find if value include in linked list or not .
 * print all node of linked list .
 
 ## Approach & Efficiency
+
 Used Classes to implement the linked list with the O(1) and O(n) for it's methods .
 
+* insert method:
+  * Time O(1)
+  * Space O(1)
+* include method :
+  * Time O(n)
+  * Space O(1)
+* toString method:
+  * Time O(n)
+  * Space O(1)
+
 ## API
+
 The class should contain the following methods:
+
 * insert
   * Arguments: value
   * Returns: nothing
@@ -28,5 +42,5 @@ The class should contain the following methods:
   * Indicates whether that value exists as a Node’s value somewhere within the list.
 * to string
   * Arguments: none
-  * Returns: a string representing all the values in the Linked List, formatted as: 
+  * Returns: a string representing all the values in the Linked List, formatted as:
 "{ a } -> { b } -> { c } -> NULL"

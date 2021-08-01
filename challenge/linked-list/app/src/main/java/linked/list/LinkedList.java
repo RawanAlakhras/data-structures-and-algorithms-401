@@ -11,7 +11,8 @@ public class LinkedList {
     public LinkedList(int value) {
         this.head=new Node(value);
     }
-    public void insert(int value){
+    /*
+    public void append(int value){
         this.length++;
         Node newNode= new Node(value);
         Node pointer=this.head;
@@ -25,6 +26,15 @@ public class LinkedList {
            pointer.next=newNode;
         }
 
+
+    }
+
+     */
+    public void insert(int value){
+        this.length++;
+        Node newNode= new Node(value);
+        newNode.next=this.head;
+        this.head=newNode;
 
     }
     public Boolean includes(int value){

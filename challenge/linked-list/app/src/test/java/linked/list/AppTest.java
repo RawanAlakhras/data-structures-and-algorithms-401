@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    //challenge 6
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
@@ -19,6 +20,38 @@ class AppTest {
         LinkedList ls= new LinkedList();
         ls.insert(1);
         assertEquals(1,ls.length,"the linked list should have length equle to number of item we inserted");
+
+    }
+    @Test void appendTest(){
+        LinkedList ls= new LinkedList();
+        ls.insert(1);
+        assertEquals(1,ls.length,"the linked list should have length equle to number of item we inserted");
+
+    }
+    @Test void appendMultiple(){
+        LinkedList ls = new LinkedList();
+        ls.insert(1);
+        ls.insert(3);
+        ls.insert(2);
+        assertEquals(3,ls.length,"the linked list should have length equle to number of item we inserted");
+
+    }
+    @Test void insertBeforeTest(){
+        LinkedList ls = new LinkedList();
+        ls.insert(1);
+        ls.insert(3);
+        ls.insert(2);
+        ls.insertBefore(3,4);
+       assertTrue(ls.includes(4) , "Return true if it finds the test element");
+
+    }
+    @Test void insertAfterTest(){
+        LinkedList ls = new LinkedList();
+        ls.insert(1);
+        ls.insert(3);
+        ls.insert(2);
+        ls.insertBefore(1,4);
+        assertTrue(ls.includes(4) , "Return true if it finds the test element");
 
     }
     @Test void TestHead(){

@@ -31,6 +31,8 @@ public class App {
         System.out.println(ls.tostring());
         ls.insertAfter(0,-1);
         System.out.println(ls.tostring());
+        System.out.println(ls.kth(ls.length));
+
 
 
 

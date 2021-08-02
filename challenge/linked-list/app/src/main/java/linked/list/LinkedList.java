@@ -11,7 +11,7 @@ public class LinkedList {
     public LinkedList(int value) {
         this.head=new Node(value);
     }
-    /*
+
     public void append(int value){
         this.length++;
         Node newNode= new Node(value);
@@ -28,8 +28,52 @@ public class LinkedList {
 
 
     }
+    public void insertBefore(int value,int newValue){
+        this.length++;
+        boolean b=false;
+        Node newNode=new Node(newValue);
+        Node pointer=this.head;
+        if(this.head.value == value){
+            newNode.next=this.head;
+            this.head=newNode;
+        }else {
+            while (pointer.next !=null){
+                if(pointer.next.value== value){
+                    b=true;
+                    newNode.next=pointer.next;
+                    pointer.next=newNode;
+                    break;
+                }
+                pointer=pointer.next;
 
-     */
+            }
+            if(!b){
+                System.out.println("No change, method exception");
+                this.length--;
+            }
+        }
+    }
+    public void insertAfter(int value,int newValue){
+        this.length++;
+        boolean b=false;
+        Node newNode=new Node(newValue);
+        Node pointer = this.head;
+        while (pointer != null){
+            if(pointer.value == value){
+                newNode.next=pointer.next;
+                pointer.next=newNode;
+                b=true;
+                break;
+            }
+            pointer=pointer.next;
+        }
+        if(!b){
+            System.out.println("No change, method exception");
+            this.length--;
+        }
+
+
+    }
     public void insert(int value){
         this.length++;
         Node newNode= new Node(value);

@@ -12,7 +12,7 @@ public class App {
 
        LinkedList ls=new LinkedList();
         System.out.println(ls.tostring());
-        ls.insert(1);
+        ls.insert(11);
         System.out.println(ls.tostring());
         ls.insert(2);
         System.out.println(ls.tostring());
@@ -21,6 +21,17 @@ public class App {
         System.out.println("is the list include 23 ?"+ls.includes(23));
         System.out.println("is the list include 1 ?"+ls.includes(1));
         System.out.println("is the list include 0 ?"+ls.includes(0));
+        ls.insertBefore(23,0);
+        System.out.println(ls.tostring());
+        ls.insertBefore(23,1);
+        System.out.println(ls.tostring());
+        ls.insertBefore(11,10);
+        System.out.println(ls.tostring());
+        ls.insertAfter(11,12);
+        System.out.println(ls.tostring());
+        ls.insertAfter(0,-1);
+        System.out.println(ls.tostring());
+
 
 
 

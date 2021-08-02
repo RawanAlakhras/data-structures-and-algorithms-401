@@ -3,10 +3,32 @@
  */
 package linked.list;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    //challenge 7
+    @Test void kthTest(){
+        LinkedList ls=new LinkedList();
+        assertEquals(null,ls.kth(1));
+        //Where k and the length of the list are the same
+        ls.append(1);
+        assertEquals(null,ls.kth(1));
+        //Where k is not a positive integer
+        assertEquals(null,ls.kth(-1));
+        //Where the linked list is of a size 1
+        assertEquals(1,ls.kth(0));
+        //Happy Path
+        ls.append(2);
+        ls.append(3);
+        ls.append(4);
+        ls.append(5);
+        assertEquals(3,ls.kth(2));
+
+
+
+    }
     //challenge 6
     @Test void appHasAGreeting() {
         App classUnderTest = new App();

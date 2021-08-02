@@ -1,5 +1,9 @@
 package linked.list;
 
+import sun.awt.image.ImageWatched;
+
+import java.util.ArrayList;
+
 public class LinkedList {
     Node head;
     int length;
@@ -104,6 +108,26 @@ public class LinkedList {
         str=str+"NULL";
         return str;
 
+
+    }
+
+    public Object kth(int k){
+        if(k >= this.length ){
+            System.out.println("k is greater than the length of the linked list");
+            return null;
+        }
+        else if(k<0){
+            System.out.println("k should be a positive integer");
+            return null;
+        }else {
+            ArrayList <Integer>arr=new ArrayList<>();
+            Node pointer=this.head;
+            while (pointer != null){
+                arr.add(pointer.value);
+                pointer=pointer.next;
+            }
+            return arr.get(arr.size()-k-1);
+        }
 
     }
 

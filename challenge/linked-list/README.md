@@ -70,3 +70,24 @@ The class should contain the following methods:
   * Returns: nothing
   * adds a new node with the given new value immediately after the first node that has the value specified
 
+# kth from end
+
+## Challenge 7:
+
+for the Linked List class:
+
+* create method k-th that able to Return the node’s value that is k places from the tail of the linked list. 
+
+## Whiteboard Process
+
+
+![Whiteboard Process](kth-from-end.png)
+
+
+## Approach & Efficiency
+
+1. step through code and track the values of linked list in a table .
+2. start count from tail of linkedlist until access to element number (k. .
+2. verify big O of written code .
+3. verify code matches algorithem .
+4. explan testing according to input and outputs.

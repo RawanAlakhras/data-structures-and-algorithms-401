@@ -8,6 +8,17 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    //challenge 8
+    @Test void zipTest(){
+        LinkedList ls1=new LinkedList();
+        ls1.append(1);
+        LinkedList ls2=new LinkedList();
+        ls2.append(2);
+        ls2.append(3);
+        LinkedList ls3=App.zip(ls1,ls2);
+        assertEquals(3,ls3.length);
+
+    }
     //challenge 7
     @Test void kthTest(){
         LinkedList ls=new LinkedList();

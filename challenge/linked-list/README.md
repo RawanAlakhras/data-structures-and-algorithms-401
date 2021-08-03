@@ -91,3 +91,20 @@ for the Linked List class:
 2. verify big O of written code .
 3. verify code matches algorithem .
 4. explan testing according to input and outputs.
+
+# Zip two linked lists.
+
+Write a function called zip lists,that able to Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+## Whiteboard Process
+
+
+![Whiteboard Process](zipList.png)
+
+## Approach & Efficiency
+
+1. input 2 linked list
+2. check the length of two linked list and store the max length in variable to determine number of iteration we need (use max as a counter ) .
+3. create new node as pointer refer to head of linked list 1  and another pointer for linked list 2 .
+4. itrate over two linked list and every iteration we check if pointer of any list is null or not,if not we add the value of it to new linked list 3,and we decrease counter by 1. 
+5. return linked list 3.

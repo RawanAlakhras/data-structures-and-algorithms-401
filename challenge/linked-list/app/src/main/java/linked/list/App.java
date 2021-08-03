@@ -7,6 +7,29 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
+    public static LinkedList zip(LinkedList ls1,LinkedList ls2){
+        LinkedList ls3=new LinkedList();
+        Node pointer1= ls1.head;
+        Node pointer2=ls2.head;
+        int i;
+        if(ls1.length> ls2.length)
+            i=ls1.length;
+        else
+            i=ls2.length;
+        while (i>0){
+            if(pointer1 !=null){
+                ls3.append(pointer1.value);
+                pointer1=pointer1.next;
+            }
+            if(pointer2 !=null){
+                ls3.append(pointer2.value);
+                pointer2=pointer2.next;
+            }
+            i--;
+        }
+        return ls3;
+
+    }
 
     public static void main(String[] args) {
 
@@ -32,6 +55,14 @@ public class App {
         ls.insertAfter(0,-1);
         System.out.println(ls.tostring());
         System.out.println(ls.kth(ls.length));
+        LinkedList ls2=new LinkedList();
+        ls2.append(1);
+        ls2.append(1);
+        ls2.append(1);
+        ls2.append(1);
+        LinkedList ls3=zip(ls,ls2);
+        System.out.println(ls3.tostring());
+
 
 
 

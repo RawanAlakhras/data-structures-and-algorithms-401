@@ -3,6 +3,8 @@
  */
 package linked.list;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -30,10 +32,40 @@ public class App {
         return ls3;
 
     }
+    public static boolean isPalindrome(LinkedList ls){
+        Node pointer =ls.head;
+        ArrayList<Integer>arr=new ArrayList<>();
+        while (pointer!=null){
+            arr.add(pointer.value);
+            pointer=pointer.next;
+        }
+        boolean flag=true;
+        int mid=arr.size() / 2;
+        for (int i = 0; i < mid && arr.size() != 0; i++) {
+
+            // Check if first and last element are different
+            // Then set flag to 1.
+            if (arr.get(i) != arr.get(arr.size() - i - 1)) {
+                flag = true;
+                break;
+            }
+        }
+
+        // If flag is set then print Not Palindrome
+        // else print Palindrome.
+        if (flag)
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+
+
+
+    return flag;
+    }
 
     public static void main(String[] args) {
 
-       LinkedList ls=new LinkedList();
+      /* LinkedList ls=new LinkedList();
         System.out.println(ls.tostring());
         ls.insert(11);
         System.out.println(ls.tostring());
@@ -62,6 +94,19 @@ public class App {
         ls2.append(1);
         LinkedList ls3=zip(ls,ls2);
         System.out.println(ls3.tostring());
+
+       */
+        LinkedList ls4=new LinkedList();
+        ls4.append(1);
+        ls4.append(2);
+        ls4.append(3);
+        ls4.append(2);
+        ls4.append(1);
+        System.out.println(ls4.tostring());
+        boolean b=isPalindrome(ls4);
+        if (b)
+            System.out.println("rawan");
+
 
 
 

@@ -8,7 +8,7 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
        Stack s=new Stack();
        s.push(1);
@@ -29,5 +29,12 @@ public class App {
         System.out.println(q1.isEmpty());
         Queue q2=new Queue();
         System.out.println(q2.isEmpty());
+        PseudoQueue ps1=new PseudoQueue();
+        ps1.enqueue(1);
+        ps1.enqueue(2);
+        ps1.enqueue(3);
+        ps1.enqueue(4);
+        int l=ps1.dequeue();
+        System.out.println(ps1.toString());
     }
 }

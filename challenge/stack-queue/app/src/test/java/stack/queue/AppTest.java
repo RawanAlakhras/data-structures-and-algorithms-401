@@ -11,4 +11,26 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test
+    public void testPseudoQueue() throws Exception {
+        PseudoQueue ps1=new PseudoQueue();
+        assertNotNull(ps1);
+        try{
+            ps1.dequeue();
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the queue is empty");
+        }
+        
+        ps1.enqueue(1);
+        assertEquals("PseudoQueue{{ 1 } ->NULL}",ps1.toString());
+
+        ps1.enqueue(2);
+        ps1.enqueue(3);
+        assertEquals("PseudoQueue{{ 1 } ->{ 2 } ->{ 3 } ->NULL}",ps1.toString());
+
+        ps1.enqueue(4);
+        int l= ps1.dequeue();
+        assertEquals(1,l);
+
+    }
 }

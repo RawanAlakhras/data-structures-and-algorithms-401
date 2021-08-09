@@ -36,5 +36,7 @@ public class App {
         ps1.enqueue(4);
         int l=ps1.dequeue();
         System.out.println(ps1.toString());
+
+
     }
 }

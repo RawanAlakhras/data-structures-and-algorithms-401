@@ -72,3 +72,28 @@ the program able to implement stack and queue using linked list
 * deQueue: 
   * If stack1 is empty then error
   * Pop an item from stack1 and return it
+
+
+# Challenge #12
+
+* Create a class called AnimalShelter which holds only dogs and cats.
+* The shelter operates using a first-in, first-out approach.
+
+
+## Approach & Efficiency
+
+* enqueue
+  * time complexity will be O(1)
+  * space o(1)
+* deQueue
+  * time complexity will be O(1)
+  * space o(1)
+
+## Solution
+
+* enqueue
+  * if input strig is equal to cat or dog we insert it in queue .
+* deQueue
+  * Return: either a dog or a cat, based on preference.
+  * If pref is not "dog" or "cat" then return null.
+  * if input is a cat and cat queue is empty then return error the same thing with dog.

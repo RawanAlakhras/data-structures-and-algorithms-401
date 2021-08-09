@@ -41,4 +41,5 @@ public class PseudoQueue {
         int value=stack1.pop();
         return value;
     }
+
 }

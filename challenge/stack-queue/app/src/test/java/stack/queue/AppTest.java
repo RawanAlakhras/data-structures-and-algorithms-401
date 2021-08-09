@@ -33,4 +33,29 @@ class AppTest {
         assertEquals(1,l);
 
     }
+    @Test
+    public void testAnimalShelter() throws Exception{
+        AnimalShelter a1=new AnimalShelter();
+        assertNotNull(a1);
+        try{
+            a1.dequeue("cat");
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the queue is empty");
+        }
+        a1.enqueue(new AnimalNode("cat"));
+        assertEquals(1,a1.catlength);
+        a1.enqueue(new AnimalNode("dog"));
+        assertEquals(1,a1.doglength);
+
+
+        assertEquals(null,a1.dequeue("dock"));
+        assertEquals("cat",a1.dequeue("cat"));
+        assertEquals("dog",a1.dequeue("dog"));
+
+        assertEquals(0, a1.catlength);
+        assertEquals(0,a1.doglength);
+
+
+
+    }
 }

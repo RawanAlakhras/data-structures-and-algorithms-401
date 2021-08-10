@@ -23,20 +23,21 @@ public class Queue {
         }
 
     }
-    public int dequeue(){
+    public int dequeue() throws Exception{
         if (this.front == null) {
-            System.out.println("the Queue is empty");
-            throw new NullPointerException();
+            throw new Exception("you can not delete :the queue is empty");
         }
         int value = this.front.value;
         this.front = this.front.next;
+        if (front == null) {
+            this.tail = null;
+        }
         this.length--;
         return value;
     }
-    public int peek(){
+    public int peek() throws Exception{
         if (this.front == null) {
-            System.out.println("the stack is empty");
-            throw new NullPointerException();
+            throw new Exception("you can not delete :the queue is empty");
         }
         int value = this.front.value;
         return value;

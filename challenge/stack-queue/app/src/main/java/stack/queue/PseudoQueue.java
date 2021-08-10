@@ -9,7 +9,7 @@ public class PseudoQueue {
         stack2=new Stack();
     }
 
-    public void enqueue(int value){
+    public void enqueue(int value) throws Exception{
         // Move all elements from stack1 to stack2
         while (!stack1.isEmpty())
         {

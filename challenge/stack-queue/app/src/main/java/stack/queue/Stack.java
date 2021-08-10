@@ -21,10 +21,9 @@ public class Stack {
 
 
     }
-    public int pop() {
+    public int pop() throws Exception{
         if (this.top == null) {
-            System.out.println("the stack is empty");
-            throw new NullPointerException();
+            throw new Exception("you can not delete :the stack is empty");
         }
         int value = this.top.value;
         this.top = this.top.next;
@@ -32,10 +31,9 @@ public class Stack {
         return value;
 
     }
-    public int peek(){
+    public int peek() throws Exception{
         if (this.top == null) {
-            System.out.println("the stack is empty");
-            throw new NullPointerException();
+            throw new Exception("you can not delete :the stack is empty");
         }
         int value = this.top.value;
         return value;

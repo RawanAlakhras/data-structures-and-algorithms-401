@@ -7,10 +7,94 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    @Test
+    public void testStackFuction() throws Exception{
+        Stack s1=new Stack();
+        //Can successfully instantiate an empty stack
+        assertNotNull(s1);
+
+        //Calling pop or peek on empty stack raises exception
+        try{
+            s1.pop();
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the stack is empty");
+        }
+        try{
+            s1.peek();
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the stack is empty");
+        }
+
+        //Can successfully push onto a stack
+        s1.push(1);
+        assertEquals(1,s1.length);
+        //Can successfully push multiple values onto a stack
+        s1.push(2);
+        s1.push(3);
+        assertEquals(3,s1.length);
+
+        //Can successfully pop off the stack
+        assertEquals(3,s1.pop());
+
+        //Can successfully empty a stack after multiple pops
+        s1.pop();
+        s1.pop();
+        assertEquals(0,s1.length);
+
+        //Can successfully peek the next item on the stack
+        s1.push(4);
+        assertEquals(4,s1.peek());
+
+
     }
+
+    @Test
+    public void testQueue() throws Exception{
+        Queue q1=new Queue();
+        //Can successfully instantiate an empty queue
+        assertNotNull(q1);
+
+        //Calling pop or peek on empty queue raises exception
+        try{
+            q1.dequeue();
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the queue is empty");
+        }
+
+        try{
+            q1.peek();
+        }catch (Exception e){
+            assertEquals(e.getMessage(),"you can not delete :the queue is empty");
+        }
+
+        //Can successfully enqueue onto a queue
+        q1.enqueue(1);
+
+        assertEquals(1,q1.length);
+        //Can successfully enqueue multiple values onto a queue
+        q1.enqueue(2);
+        q1.enqueue(3);
+        assertEquals(3,q1.length);
+
+        //Can successfully dequeue off the queue
+        assertEquals(1,q1.dequeue());
+
+        //Can successfully empty a queue after multiple dequeue
+        q1.dequeue();
+        q1.dequeue();
+
+        assertEquals(0,q1.length);
+
+        //Can successfully peek the next item on the queue
+        q1.enqueue(4);
+      
+
+        assertEquals(4,q1.peek());
+
+
+    }
+
     @Test
     public void testPseudoQueue() throws Exception {
         PseudoQueue ps1=new PseudoQueue();

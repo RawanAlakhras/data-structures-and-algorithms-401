@@ -88,7 +88,7 @@ class AppTest {
 
         //Can successfully peek the next item on the queue
         q1.enqueue(4);
-      
+
 
         assertEquals(4,q1.peek());
 

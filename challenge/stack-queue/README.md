@@ -97,3 +97,23 @@ the program able to implement stack and queue using linked list
   * Return: either a dog or a cat, based on preference.
   * If pref is not "dog" or "cat" then return null.
   * if input is a cat and cat queue is empty then return error the same thing with dog.
+
+# Challenge #13 validate brackets
+
+write function representing whether or not the brackets in the string are balanced .
+
+## Whiteboard Process
+
+![Whiteboard Process](validate-brackets.png)
+
+## Approach & Efficiency
+
+* The Big O time complexity for validate brackets function is O(1).
+* The Big O space complexity for validate brackets function is O(1).
+
+## Solution
+
+
+* if input string contains a ``(`` with its close bracket ``)`` or contains a ``{`` with its close bracket ``}`` or contains a ``[`` with its close bracket ``]`` then the function will return true .
+
+* otherwise it will return false .

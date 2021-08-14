@@ -9,6 +9,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
 
     @Test
+    public void testValidateBrackets(){
+       boolean b1= App.validateBrackets("(](");
+       assertEquals(false,b1);
+       boolean b2= App.validateBrackets("()[[Extra Characters]]");
+       assertEquals(true,b2);
+
+       assertTrue(App.validateBrackets("{}{Code}[Fellows](())"));
+
+    }
+
+    @Test
     public void testStackFuction() throws Exception{
         Stack s1=new Stack();
         //Can successfully instantiate an empty stack

@@ -8,6 +8,16 @@ public class App {
         return "Hello World!";
     }
 
+    public static boolean validateBrackets(String str){
+        if((str.contains("(") && str.contains(")")) || (str.contains("{") && str.contains("}")) || (str.contains("[") && str.contains("]"))){
+            return true ;
+        }else{
+            return false;
+
+        }
+
+    }
+
     public static void main(String[] args) throws Exception {
 
        Stack s=new Stack();
@@ -36,6 +46,9 @@ public class App {
         ps1.enqueue(4);
         int l=ps1.dequeue();
         System.out.println(ps1.toString());
+
+        System.out.println(validateBrackets("(]("));
+        System.out.println(validateBrackets("()[[Extra Characters]]"));
 
 
     }

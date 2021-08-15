@@ -11,6 +11,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test
+    public void testMaximumValue(){
+        BinarySearchTree b2=new BinarySearchTree();
+        b2.Add(1);
+        assertEquals(1,b2.maximumValue());
+        b2.Add(2);
+        b2.Add(10);
+        assertEquals(10,b2.maximumValue());
+    }
+    @Test
     public void testTree(){
         BinarySearchTree b1=new BinarySearchTree();
         assertNotNull(b1);

@@ -50,3 +50,22 @@ Create a Node class that has properties for the value stored in the node, the le
     3. Else if key < root, traverse the left subtree.
     4. Else traverse right subtree.
     5. Repetitively compare subtree elements until the key is found or the end of the tree is reached.
+
+# Challenge #16
+
+Find the maximum value stored in the tree
+
+## Whiteboard Process
+
+![Whiteboard Process](maxNumber.png)
+## Approach & Efficiency
+
+* The Big O time complexity for find max number is O(n).
+* The Big O space complexity for find max number is O(1).
+
+## Solution
+
+* set max number equal to value of root node .
+* traverse the given tree and for every node return maximum in node’s left subtree
+* traverse the given tree and for every node return maximum in node’s right subtree
+* commper between maximum in node’s left subtree and maximum in node’s right subtree then return max between it.

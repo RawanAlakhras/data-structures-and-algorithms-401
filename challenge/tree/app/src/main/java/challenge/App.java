@@ -31,6 +31,7 @@ public class App {
 
         System.out.println("is the tree contain 16 ? "+b1.contains(16));
         System.out.println("is the tree contain 9 ? "+b1.contains(9));
+        System.out.println("the max number is " + b1.maximumValue());
 
 
     }

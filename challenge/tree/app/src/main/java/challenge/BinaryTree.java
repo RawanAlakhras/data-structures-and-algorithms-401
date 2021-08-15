@@ -74,6 +74,26 @@ public class BinaryTree <T>{
 
 
     }
+    public int maximumValue(){
+        Node node =this.root;
+        return recursionMax(node);
+
+
+    }
+    public int recursionMax(Node node){
+        if (node == null)
+            return Integer.MIN_VALUE;
+        int max=(int)node.value;
+        int lmax=(int)recursionMax(node.left);
+        int rmax=(int)recursionMax(node.right);
+
+        if(lmax >rmax)
+            max=lmax;
+        else if(rmax>lmax)
+            max=rmax;
+        return max;
+
+    }
 
 
 }

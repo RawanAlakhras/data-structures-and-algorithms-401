@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92aae430-1c5a-42ef-b6cd-90cfa6d4f7ab" name="Default Changelist" comment="" />
+    <list default="true" id="92aae430-1c5a-42ef-b6cd-90cfa6d4f7ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +55,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.testTree">
+  <component name="RunManager" selected="Gradle.AppTest.testMaximumValue">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="challenge.App" />
       <module name="challenge.app.main" />
@@ -61,16 +69,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="AppTest.testMaximumValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge.AppTest.testMaximumValue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="AppTest.testTree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -95,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.testMaximumValue" />
         <item itemvalue="Gradle.AppTest.testTree" />
         <item itemvalue="Application.App" />
       </list>
@@ -109,6 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628774200010</updated>
       <workItem from="1628774224837" duration="14517000" />
+      <workItem from="1629067047216" duration="2115000" />
     </task>
     <servers />
   </component>

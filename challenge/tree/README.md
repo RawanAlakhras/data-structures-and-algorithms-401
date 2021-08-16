@@ -69,3 +69,25 @@ Find the maximum value stored in the tree
 * traverse the given tree and for every node return maximum in node’s left subtree
 * traverse the given tree and for every node return maximum in node’s right subtree
 * commper between maximum in node’s left subtree and maximum in node’s right subtree then return max between it.
+
+# Challenge #17
+
+Write a function called breadth first that can Traverse the input tree using a Breadth-first approach and return list of traversing node.
+
+## Whiteboard Process
+
+![Whiteboard Process](tree-breadth-first.png)
+
+## Approach & Efficiency
+
+* The Big O time complexity for Traversing is O(n).
+* The Big O space complexity for Traversing is O(n).
+
+## Solution
+
+* create new queue to store root node
+* iterate over queue element
+* store first element of queue in a node and remove it from the queue and store it in arraylist .
+* check if the removed node has a left nod and store it in a queue.
+* check if the removed node has a right node and store it in queue.
+* return the arraylist .  

@@ -1,27 +1,41 @@
 package challenge;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class BinaryTree <T>{
 
     Node root;
     ArrayList <T>output1;
-//    ArrayList <T>output2;
-//    ArrayList <T>output3;
+
 
     public BinaryTree(T root) {
         this.root =new Node(root);
         output1=new ArrayList<>();
 
-//        output2=new ArrayList<>();
-//        output3=new ArrayList<>();
     }
     public BinaryTree() {
         this.root = null;
 
         output1=new ArrayList<>();
-//        output2=new ArrayList<>();
-//        output3=new ArrayList<>();
+
+    }
+    public ArrayList<T> breadthFirst(Node <T> node){
+        this.output1.clear();
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(node);
+        while (!queue.isEmpty()){
+            Node front =queue.poll();
+            this.output1.add((T) front.value);
+            if(front.left !=null)
+                queue.add(front.left);
+           if(front.right !=null)
+               queue.add((Node) front.right);
+        }
+
+        return this.output1;
     }
     public  ArrayList<T> DFTpre(Node <T> node){
         this.output1.clear();
@@ -43,7 +57,7 @@ public class BinaryTree <T>{
     }
     public void DFTpreOrder(Node <T> node){
         this.output1.add(node.value);
-        //System.out.print(node.value+"->");
+
         if(node.left != null){
             DFTpreOrder(node.left);
         }
@@ -57,7 +71,7 @@ public class BinaryTree <T>{
     public void DFTinOrder(Node <T> node){
         if(node.left !=null)
             DFTinOrder(node.left);
-        //System.out.print(node.value+"->");
+
         this.output1.add(node.value);
         if(node.right !=null)
             DFTinOrder(node.right);

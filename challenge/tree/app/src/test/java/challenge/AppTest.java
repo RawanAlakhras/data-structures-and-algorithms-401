@@ -11,6 +11,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test
+    public void testBreadthFirst(){
+        BinarySearchTree b4=new BinarySearchTree();
+        b4.Add(23);
+        b4.Add(42);
+        b4.Add(85);
+        b4.Add(8);
+        b4.Add(16);
+
+        ArrayList <Integer>arr=new ArrayList<>();
+        arr.add(23);
+        arr.add(8);
+        arr.add(42);
+        arr.add(16);
+        arr.add(85);
+
+        assertEquals(arr,b4.breadthFirst(b4.root));
+
+    }
+
+    @Test
     public void testMaximumValue(){
         BinarySearchTree b2=new BinarySearchTree();
         b2.Add(1);

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92aae430-1c5a-42ef-b6cd-90cfa6d4f7ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge/KarryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge/NodeKarryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,11 +160,23 @@
       <workItem from="1628774224837" duration="14517000" />
       <workItem from="1629067047216" duration="2115000" />
       <workItem from="1629142187468" duration="4668000" />
+      <workItem from="1629243129129" duration="3213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -176,7 +187,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/challenge/App.java</url>
-          <line>32</line>
+          <line>49</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

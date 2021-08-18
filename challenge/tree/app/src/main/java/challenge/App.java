@@ -4,9 +4,30 @@
 package challenge;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class App {
+    public static KarryTree<String> fizzBuzztree(KarryTree<Integer> kTree){
+        List<Integer>arr=new ArrayList<Integer>();
+        KarryTree<String> output = new KarryTree<>(kTree.k);
+        arr=kTree.breadthFirst(kTree.root);
+        for(int i =0 ;i<arr.size();i++){
+            if(arr.get(i)%3 ==0 && arr.get(i)%5 ==0){
+                output.add("FizzBuzz");
+            }
+            else if(arr.get(i)%3 == 0){
+                output.add("Fizz");
+            }
+            else if(arr.get(i)%5 == 0){
+                output.add("Buzz");
+            }
+            else {
+                output.add(Integer.toString(arr.get(i)));
+            }
 
+        }
+        return output;
+    }
 
     public static void main(String[] args) {
 

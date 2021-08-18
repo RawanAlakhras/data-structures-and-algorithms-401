@@ -54,6 +54,11 @@ the program able to implement stack and queue using linked list
   * Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
   * Internally, utilize 2 Stack instances to create and manage the queue
 
+## Whiteboard Process
+
+![Whiteboard Process](stack-queue-pseudo.png)
+
+
 ## Approach & Efficiency
 
 * enqueue

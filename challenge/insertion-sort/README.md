@@ -8,7 +8,7 @@ Write function that sort array using insertion sort algorithm.
 
 ## Approach & Efficiency
 
-* The Big O time complexity for sorting is O(n).
+* The Big O time complexity for sorting is O(n^2).
 * The Big O space complexity for sorting is O(n).
 
 ## Solution

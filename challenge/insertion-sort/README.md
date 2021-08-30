@@ -4,7 +4,7 @@ Write function that sort array using insertion sort algorithm.
 
 ## Whiteboard Process
 
-![Whiteboard Process](insertion-sort.md)
+![Whiteboard Process](insertion-sort.png)
 
 ## Approach & Efficiency
 

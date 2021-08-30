@@ -9,3 +9,4 @@
 | 5,6 ,7|[linked-list](challenge/linked-list/README.md)  |[code](challenge/linked-list)|
 | 10,11,12,13 |[Stacks and Queues](challenge/stack-queue/README.md)|[code](challenge/stack-queue) |
 | 15 ,16,17|[Tree](challenge/tree/README.md)|[code](challenge/tree)|
+| 26|[Insertion Sort](challenge/insertion-sort/README.md)|[code](challenge/insertion-sort)|[BLOG](challenge/insertion-sort/BLOG.md)|

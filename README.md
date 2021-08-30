@@ -11,3 +11,6 @@
 | 15 ,16,17|[Tree](challenge/tree/README.md)|[code](challenge/tree)|
 | 26|[Insertion Sort](challenge/insertion-sort/README.md) | [code](challenge/insertion-sort) |  
 | 26|[BLOG](challenge/insertion-sort/BLOG.md) |  |
+| 27|[Insertion Sort](challenge/merge-sort/README.md) | [code](challenge/merge-sort) |  
+| 27|[BLOG](challenge/merge-sort/BLOG.md) |  |
+

@@ -45,3 +45,24 @@
 * hash()
   * Arguments: key
   * Returns: Index in the collection for that key
+
+# challenge 31
+
+* Write a function called repeated word that finds the first word to occur more than once in a string
+
+## Whiteboard Process
+
+![Whiteboard Process](repeated.png)
+
+## Approach & Efficiency
+
+* The Big O time complexity for method is O(n).
+* The Big O space complexity for method is O(1).
+
+## Solution
+
+* split the input text into array
+* decler empty array list
+* iterate over array and save element and map
+* chaeck if the element already exist in array set or not
+* if it exist then it the first element repeted, return it.

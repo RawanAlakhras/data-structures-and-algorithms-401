@@ -15,6 +15,6 @@
 | 27|[BLOG](challenge/merge-sort/BLOG.md) |  |
 | 28|[Quick Sort](challenge/quick-sort/README.md) | [code](challenge/quick-sort) |  
 | 28|[BLOG](challenge/quick-sort/BLOG.md) |  |
-| 30|[hashtable](challenge/hashtable/README.md) | [code](challenge/hashtable) | 
+| 30,31|[hashtable](challenge/hashtable/README.md) | [code](challenge/hashtable) | 
 
 

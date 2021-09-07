@@ -66,3 +66,26 @@
 * iterate over array and save element and map
 * chaeck if the element already exist in array set or not
 * if it exist then it the first element repeted, return it.
+
+# challenge 32
+
+* Write a function to Find common values in 2 binary trees.
+
+## Whiteboard Process
+
+![Whiteboard Process](hashmap-tree-intersection.png)
+
+## Approach & Efficiency
+
+* The Big O time complexity for method is O(n).
+* The Big O space complexity for method is O(1).
+
+## Solution
+
+* Create function tree_intersection which accepts two binary trees as it parameters.
+* Declare 2 Array list to append the intersection values to it.
+*find tree that have smaller size
+* itrate over it and check if array 1 contains the value of array2 and store the vlaue in result array 
+* return result array .
+
+

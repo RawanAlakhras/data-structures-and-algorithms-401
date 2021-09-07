@@ -26,6 +26,27 @@ public class App {
 
     }
 
+    public static Set<Integer> treeIntersection(BinarySearchTree tree1,BinarySearchTree tree2){
+        ArrayList<Integer>arr1=tree1.DFTIn(tree1.root);
+        ArrayList<Integer>arr2=tree2.DFTIn(tree2.root);
+        Set<Integer>result=new HashSet<>();
+
+        if(arr1.size()>=arr2.size()){
+            for (int i=0;i<arr2.size();i++){
+                if(arr1.contains(arr2.get(i))){
+                    result.add(arr2.get(i));
+                }
+            }
+        }else {
+            for (int i=0;i<arr1.size();i++){
+                if(arr2.contains(arr1.get(i))){
+                    result.add(arr1.get(i));
+                }
+            }
+        }
+    return result;
+    }
+
     public static void main(String[] args) {
         String test1 = "Once upon a time, there was a brave princess who...";
         String test2="It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
@@ -33,5 +54,46 @@ public class App {
         System.out.println(repeatedWord(test1));
         System.out.println(repeatedWord(test2));
         System.out.println(repeatedWord(test3));
+
+        BinarySearchTree b1=new BinarySearchTree();
+        b1.Add(150);
+        b1.Add(250);
+        b1.Add(350);
+        b1.Add(500);
+        b1.Add(200);
+        b1.Add(300);
+
+        b1.Add(160);
+        b1.Add(125);
+
+        b1.Add(175);
+        b1.Add(100);
+
+        b1.Add(75);
+
+
+        BinarySearchTree b2=new BinarySearchTree();
+        b2.Add(42);
+        b2.Add(600);
+
+        b2.Add(350);
+        b2.Add(500);
+
+        b2.Add(100);
+        b2.Add(15);
+
+        b2.Add(160);
+        b2.Add(175);
+
+        b2.Add(125);
+        b2.Add(200);
+        b2.Add(5);
+
+        Set<Integer> set=treeIntersection(b1,b2);
+        for(int i : set)
+            System.out.println(i);
+
+
+
     }
 }

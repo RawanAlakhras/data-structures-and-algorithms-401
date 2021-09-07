@@ -4,6 +4,10 @@
 package hashtable;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -18,5 +22,48 @@ class AppTest {
         assertEquals("a",App.repeatedWord(test1));
         assertEquals("it",App.repeatedWord(test2));
         assertEquals("summer",App.repeatedWord(test3));
+    }
+    @Test void testTreeIntersection(){
+        BinarySearchTree b1=new BinarySearchTree();
+        b1.Add(150);
+        b1.Add(250);
+        b1.Add(350);
+        b1.Add(500);
+        b1.Add(200);
+        b1.Add(300);
+
+        b1.Add(160);
+        b1.Add(125);
+
+        b1.Add(175);
+        b1.Add(100);
+
+        b1.Add(75);
+        BinarySearchTree b2=new BinarySearchTree();
+        b2.Add(42);
+        b2.Add(600);
+
+        b2.Add(350);
+        b2.Add(500);
+
+        b2.Add(100);
+        b2.Add(15);
+
+        b2.Add(160);
+        b2.Add(175);
+
+        b2.Add(125);
+        b2.Add(200);
+        b2.Add(5);
+
+        Set<Integer>set= new HashSet<>();
+        set.add(160);
+        set.add(100);
+        set.add(500);
+        set.add(200);
+        set.add(125);
+        set.add(350);
+        set.add(175);
+        assertArrayEquals(set.toArray(),App.treeIntersection(b1,b2).toArray());
     }
 }

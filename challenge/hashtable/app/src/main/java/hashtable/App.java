@@ -90,8 +90,9 @@ public class App {
         b2.Add(5);
 
         Set<Integer> set=treeIntersection(b1,b2);
-        for(int i : set)
-            System.out.println(i);
+        System.out.println(set);
+//        for(int i : set)
+//            System.out.println(i);
 
 
 

@@ -25,6 +25,11 @@ public class App {
         System.out.println(graph.getSize());
         System.out.println(graph.getNeighbours("Rob"));
 
+        System.out.println(graph.breadthFirst("Bob"));
+
+
+
+
 
     }
 }

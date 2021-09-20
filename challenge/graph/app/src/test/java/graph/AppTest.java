@@ -32,5 +32,8 @@ class AppTest {
         assertEquals(5,graph.getSize());
         //test get neighbors
         assertArrayEquals(new String[]{"Bob", "Mark", "Maria"},graph.getNeighbours("Rob").toArray());
+
+        //test breadth First
+        assertArrayEquals(new String[]{"Bob", "Rob", "Alice", "Mark", "Maria"},graph.breadthFirst("Bob").toArray());
     }
 }

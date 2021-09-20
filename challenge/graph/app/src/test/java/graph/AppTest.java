@@ -13,18 +13,27 @@ class AppTest {
     }
     @Test void graph(){
         Graph graph = new Graph();
+        //test add node
         graph.addNode("Bob");
         graph.addNode("Alice");
         graph.addNode("Mark");
         graph.addNode("Rob");
         graph.addNode("Maria");
+        //test add Edge
         graph.addEdge("Bob", "Alice",2);
         graph.addEdge("Bob", "Rob",4);
         graph.addEdge("Alice", "Mark",1);
         graph.addEdge("Rob", "Mark",1);
         graph.addEdge("Alice", "Maria",2);
         graph.addEdge("Rob", "Maria",3);
+        //test getNode
         assertArrayEquals(new String[]{"Bob", "Rob", "Alice", "Mark", "Maria"},graph.getNodes().toArray());
+        //test get size
         assertEquals(5,graph.getSize());
+        //test get neighbors
+        assertArrayEquals(new String[]{"Bob", "Mark", "Maria"},graph.getNeighbours("Rob").toArray());
+
+        //test breadth First
+        assertArrayEquals(new String[]{"Bob", "Rob", "Alice", "Mark", "Maria"},graph.breadthFirst("Bob").toArray());
     }
 }

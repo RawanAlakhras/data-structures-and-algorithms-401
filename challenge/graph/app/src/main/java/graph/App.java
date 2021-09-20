@@ -23,6 +23,12 @@ public class App {
         graph.addEdge("Rob", "Maria",3);
         System.out.println(graph.getNodes());
         System.out.println(graph.getSize());
+        System.out.println(graph.getNeighbours("Rob"));
+
+        System.out.println(graph.breadthFirst("Bob"));
+
+
+
 
 
     }

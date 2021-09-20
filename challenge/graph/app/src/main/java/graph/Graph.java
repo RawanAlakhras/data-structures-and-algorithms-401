@@ -52,4 +52,26 @@ public class Graph {
         }
         return traversed;
     }
+
+    // challenge 37
+
+    public String businessTrip(String[] cities){
+        int totalCost = 0;
+        for (int i = 0; i < cities.length-1; i++) {
+            if (getNeighbours((String) cities[i]).contains(cities[i+1])){
+                totalCost += nodes.get(cities[i]).get(cities[i+1]);
+            }
+            else {
+                totalCost = 0;
+                break;
+            }
+
+        }
+        if(totalCost == 0){
+            return "False, "+ "$" + totalCost ;
+        }
+        else {
+            return "True, " + "$"+ totalCost ;
+        }
+    }
 }

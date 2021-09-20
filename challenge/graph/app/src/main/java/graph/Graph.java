@@ -31,4 +31,25 @@ public class Graph {
     public int getSize(){
         return this.nodes.size();
     }
+
+    public List<String> breadthFirst(String root){
+        Queue<String> visited = new LinkedList<>();
+        Queue<String> list = new LinkedList<>();
+        List<String> traversed = new ArrayList<>();
+
+        list.add(root);
+        visited.add(root);
+
+        while (!list.isEmpty()){
+            String node = list.remove();
+            traversed.add(node);
+            for (String singleNode : getNeighbours(node)){
+                if (!visited.contains(singleNode)){
+                    visited.add(singleNode);
+                    list.add(singleNode);
+                }
+            }
+        }
+        return traversed;
+    }
 }
